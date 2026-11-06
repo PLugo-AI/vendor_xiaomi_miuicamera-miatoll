@@ -1,0 +1,384 @@
+//
+// Copyright (C) 2023-2026 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+// Automatically generated — edit with care.
+//
+
+soong_namespace {
+    imports: [
+        "device/xiaomi/miuicamera-miatoll",
+        "vendor/xiaomi/miatoll",
+    ],
+}
+
+// ============================================================
+// System shared libraries (system/lib64)
+// ============================================================
+
+cc_prebuilt_library_shared {
+    name: "libcamera_algoup_jni.xiaomi",
+    owner: "xiaomi",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system/lib64/libcamera_algoup_jni.xiaomi.so"],
+            shared_libs: [
+                "libgui_shim_miuicamera",
+                "libvndksupport",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libgui",
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_jpegutil_jni.xiaomi",
+    owner: "xiaomi",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system/lib64/libcamera_jpegutil_jni.xiaomi.so"],
+            shared_libs: [
+                "libion",
+                "libmedia",
+                "libcamera_client",
+                "libandroid_runtime",
+                "libnativehelper",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libgui",
+                "libui",
+                "libbinder",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_mianode_jni.xiaomi",
+    owner: "xiaomi",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system/lib64/libcamera_mianode_jni.xiaomi.so"],
+            shared_libs: [
+                "libgui_shim_miuicamera",
+                "libvndksupport",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libgui",
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libxml2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdoc_photo",
+    owner: "xiaomi",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system/lib64/libdoc_photo.so"],
+            shared_libs: [
+                "liblog",
+                "libOpenCL",
+                "libjnigraphics",
+                "libc",
+                "libz",
+                "libdl",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdoc_photo_c++_shared",
+    owner: "xiaomi",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system/lib64/libdoc_photo_c++_shared.so"],
+            shared_libs: ["libc", "libdl"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgallery_arcsoft_dualcam_refocus",
+    owner: "xiaomi",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system/lib64/libgallery_arcsoft_dualcam_refocus.so"],
+            shared_libs: [
+                "libmpbase",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgallery_arcsoft_portrait_lighting",
+    owner: "xiaomi",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system/lib64/libgallery_arcsoft_portrait_lighting.so"],
+            shared_libs: [
+                "libmpbase",
+                "libarcsoft_portrait_lighting_c",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgallery_arcsoft_portrait_lighting_c",
+    owner: "xiaomi",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system/lib64/libgallery_arcsoft_portrait_lighting_c.so"],
+            shared_libs: ["libc", "libm", "libdl"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libgallery_mpbase",
+    owner: "xiaomi",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system/lib64/libgallery_mpbase.so"],
+            shared_libs: ["libc"],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmibokeh_gallery",
+    owner: "xiaomi",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system/lib64/libmibokeh_gallery.so"],
+            shared_libs: [
+                "libOpenCL",
+                "liblog",
+                "libz",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librefocus",
+    owner: "xiaomi",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system/lib64/librefocus.so"],
+            shared_libs: [
+                "libmpbase",
+                "libarcsoft_dualcam_refocus",
+                "libarcsoft_portrait_lighting",
+                "libjnigraphics",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "librefocus_mibokeh",
+    owner: "xiaomi",
+    strip: { none: true },
+    target: {
+        android_arm64: {
+            srcs: ["proprietary/system/lib64/librefocus_mibokeh.so"],
+            shared_libs: [
+                "libmibokeh_gallery",
+                "libjnigraphics",
+                "liblog",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+// ============================================================
+// APKs
+// ============================================================
+
+android_app_import {
+    name: "MIUICamera",
+    owner: "xiaomi",
+    apk: "proprietary/system/priv-app/MIUICamera/MIUICamera.apk",
+    overrides: [
+        "Camera2",
+        "Aperture",
+        "Flash",
+    ],
+    certificate: "platform",
+    dex_preopt: { enabled: false },
+    privileged: true,
+}
+
+android_app_import {
+    name: "MIUIExtraPhoto",
+    owner: "xiaomi",
+    apk: "proprietary/system/priv-app/MIUIExtraPhoto/MIUIExtraPhoto.apk",
+    certificate: "platform",
+    dex_preopt: { enabled: false },
+    privileged: true,
+}
+
+// ============================================================
+// MIUICamera internal lib symlinks → system/lib64
+// ============================================================
+
+install_symlink {
+    name: "system_priv-app_MIUICamera_lib_arm64_libcamera_algoup_jni_xiaomi_so",
+    installed_location: "priv-app/MIUICamera/lib/arm64/libcamera_algoup_jni.xiaomi.so",
+    symlink_target: "/system/lib64/libcamera_algoup_jni.xiaomi.so",
+}
+
+install_symlink {
+    name: "system_priv-app_MIUICamera_lib_arm64_libcamera_jpegutil_jni_xiaomi_so",
+    installed_location: "priv-app/MIUICamera/lib/arm64/libcamera_jpegutil_jni.xiaomi.so",
+    symlink_target: "/system/lib64/libcamera_jpegutil_jni.xiaomi.so",
+}
+
+install_symlink {
+    name: "system_priv-app_MIUICamera_lib_arm64_libcamera_mianode_jni_xiaomi_so",
+    installed_location: "priv-app/MIUICamera/lib/arm64/libcamera_mianode_jni.xiaomi.so",
+    symlink_target: "/system/lib64/libcamera_mianode_jni.xiaomi.so",
+}
+
+// ============================================================
+// MIUIExtraPhoto internal lib symlinks → system/lib64
+// ============================================================
+
+install_symlink {
+    name: "system_priv-app_MIUIExtraPhoto_lib_arm64_libdoc_photo_so",
+    installed_location: "priv-app/MIUIExtraPhoto/lib/arm64/libdoc_photo.so",
+    symlink_target: "/system/lib64/libdoc_photo.so",
+}
+
+install_symlink {
+    name: "system_priv-app_MIUIExtraPhoto_lib_arm64_libdoc_photo_cxx_shared_so",
+    installed_location: "priv-app/MIUIExtraPhoto/lib/arm64/libdoc_photo_c++_shared.so",
+    symlink_target: "/system/lib64/libdoc_photo_c++_shared.so",
+}
+
+install_symlink {
+    name: "system_priv-app_MIUIExtraPhoto_lib_arm64_libgallery_arcsoft_dualcam_refocus_so",
+    installed_location: "priv-app/MIUIExtraPhoto/lib/arm64/libgallery_arcsoft_dualcam_refocus.so",
+    symlink_target: "/system/lib64/libgallery_arcsoft_dualcam_refocus.so",
+}
+
+install_symlink {
+    name: "system_priv-app_MIUIExtraPhoto_lib_arm64_libgallery_arcsoft_portrait_lighting_so",
+    installed_location: "priv-app/MIUIExtraPhoto/lib/arm64/libgallery_arcsoft_portrait_lighting.so",
+    symlink_target: "/system/lib64/libgallery_arcsoft_portrait_lighting.so",
+}
+
+install_symlink {
+    name: "system_priv-app_MIUIExtraPhoto_lib_arm64_libgallery_arcsoft_portrait_lighting_c_so",
+    installed_location: "priv-app/MIUIExtraPhoto/lib/arm64/libgallery_arcsoft_portrait_lighting_c.so",
+    symlink_target: "/system/lib64/libgallery_arcsoft_portrait_lighting_c.so",
+}
+
+install_symlink {
+    name: "system_priv-app_MIUIExtraPhoto_lib_arm64_libgallery_mpbase_so",
+    installed_location: "priv-app/MIUIExtraPhoto/lib/arm64/libgallery_mpbase.so",
+    symlink_target: "/system/lib64/libgallery_mpbase.so",
+}
+
+install_symlink {
+    name: "system_priv-app_MIUIExtraPhoto_lib_arm64_libmibokeh_gallery_so",
+    installed_location: "priv-app/MIUIExtraPhoto/lib/arm64/libmibokeh_gallery.so",
+    symlink_target: "/system/lib64/libmibokeh_gallery.so",
+}
+
+install_symlink {
+    name: "system_priv-app_MIUIExtraPhoto_lib_arm64_librefocus_so",
+    installed_location: "priv-app/MIUIExtraPhoto/lib/arm64/librefocus.so",
+    symlink_target: "/system/lib64/librefocus.so",
+}
+
+install_symlink {
+    name: "system_priv-app_MIUIExtraPhoto_lib_arm64_librefocus_mibokeh_so",
+    installed_location: "priv-app/MIUIExtraPhoto/lib/arm64/librefocus_mibokeh.so",
+    symlink_target: "/system/lib64/librefocus_mibokeh.so",
+}

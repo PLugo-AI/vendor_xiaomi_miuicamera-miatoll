@@ -1,0 +1,2 @@
+# Ignore reassembled APK — only push split parts to GitHub
+proprietary/system/priv-app/MIUICamera/MIUICamera.apk
